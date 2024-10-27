@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal webpage of a PhD student">
+    <title>Personal Webpage</title>
+    <style>
+        body {
+            font-family: Courier New, sans-serif;
+            text-align: left;
+            margin: auto;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            margin: auto;
+            display: flex;
+            align-items: flex-start;
+        }
+        h1 {
+            margin-left: 20px;
+        }
+        .profile-photo {
+            width: 150px;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .contact-info {
+            margin-left: 20px;
+            width: calc(100% - 170px);
+        }
+        .logos img {
+            width: 100px;
+            margin: 10px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-top: 40px;
+            color: #333;
+        }
+        .contact-info a, .download-cv {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .content-container {
+            max-width: 800px;
+            margin: auto;
+            text-align: left;
+        }
+        .content-item {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        td {
+            vertical-align: top;
+            padding: 5px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Valentina Astore</h1>
+            <div class="contact-info">
+                <table>
+                    <tr>
+                        <td style="width: 33.3333%;">Email Addresses:</td>
+                        <td><a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a>,<br>
+                            <a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a></td>
+                    </tr>
+                    <tr>
+                        <td>LinkedIn:</td>
+                        <td><a href="https://www.linkedin.com/in/valentina-astore" target="_blank">Valentina-Astore</a></td>
+                    </tr>
+                    <tr>
+                        <td>Office Address:</td>
+                        <td>Inria de Saclay - Bâtiment Alan Turing<br>
+                            Campus de l'École polytechnique<br>
+                            1 rue Honoré d'Estienne d'Orves<br>
+                            91120 Palaiseau</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <img src="profile-photo.jpg" alt="Your profile photo" class="profile-photo">
+    </header>
+
+    <section>
+        <div class="content-container">
+            <h2 class="section-title">About Me</h2>
+            <div class="content-item">
+                <p>Hello! I am Valentina ASTORE, a PhD student specializing in [Your Field].</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content-container">
+            <h2 class="section-title">Affiliated Institutions</h2>
+            <div class="logos">
+                <img src="institution-logo1.png" alt="Institution Logo 1">
+                <img src="institution-logo2.png" alt="Institution Logo 2">
+                <!-- Add more logos as needed -->
+            </div>
+
+            <h2 class="section-title">Teaching</h2>
+            <div class="content-item">
+                <p>Here you will find links to the courses I teach and relevant materials:</p>
+                <ul>
+                    <li><a href="course1-material.pdf" target="_blank">Course 1 Material</a></li>
+                    <li><a href="course2-material.pdf" target="_blank">Course 2 Material</a></li>
+                    <!-- Add more teaching materials as needed -->
+                </ul>
+            </div>
+
+            <h2 class="section-title">Publications</h2>
+            <div class="content-item">
+                <ul>
+                    <li>Publication 1 - <em>Journal Name</em> (Year)</li>
+                    <li>Publication 2 - <em>Journal Name</em> (Year)</li>
+                    <!-- Add more publications as needed -->
+                </ul>
+            </div>
+
+            <h2 class="section-title">Conferences</h2>
+            <div class="content-item">
+                <ul>
+                    <li>Conference 1 - Location, Year</li>
+                    <li>Conference 2 - Location, Year</li>
+                    <!-- Add more conferences as needed -->
+                </ul>
+            </div>
+
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="download-cv">
+                <a href="cv.pdf" download>Download my CV</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
 
