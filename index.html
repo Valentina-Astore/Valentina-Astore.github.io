@@ -12,27 +12,33 @@
             margin: auto;
             padding: 0;
         }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-left: 20px;
+        }
         header {
-            padding: 20px;
-            margin: auto;
             display: flex;
             align-items: flex-start;
+            margin-top: 20px;
         }
         h1 {
-            margin-left: 20px;
+            margin-bottom: 10px;
         }
         .profile-photo {
             width: 150px;
             border-radius: 0%;
             margin-left: 20px;
         }
-        .contact-info {
-            margin-left: 20px;
-            width: calc(100% - 170px);
+        .contact-info table {
+            border-collapse: collapse;
+            width: auto;
         }
-        .logos img {
-            width: 100px;
-            margin: 10px;
+        .contact-info td {
+            vertical-align: top;
+            padding: 5px;
+            text-align: left;
+            white-space: nowrap;
         }
         .section-title {
             font-size: 1.5em;
@@ -46,105 +52,108 @@
         .content-container {
             max-width: 800px;
             margin: auto;
-            text-align: left;
         }
         .content-item {
             margin-bottom: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        td {
-            vertical-align: top;
-            padding: 5px;
-            text-align: left;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div>
-            <h1>Valentina Astore</h1>
-            <div class="contact-info">
-                <table>
-                    <tr>
-                        <td style="width: 33.3333%;">Email Addresses:</td>
-                        <td><a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a>,<br>
-                            <a href="mailto:valentina.astore@ip-paris.fr">valentina.astore@ip-paris.fr</a></td>
-                    </tr>
-                    <tr>
-                        <td>LinkedIn:</td>
-                        <td><a href="https://www.linkedin.com/in/valentina-astore" target="_blank">Valentina-Astore</a></td>
-                    </tr>
-                    <tr>
-                        <td>Office Address:</td>
-                        <td>Inria de Saclay - Bâtiment Alan Turing<br>
-                            Campus de l'École polytechnique<br>
-                            1 rue Honoré d'Estienne d'Orves<br>
-                            91120 Palaiseau</td>
-                    </tr>
-                </table>
+    <div class="container">
+        <header>
+            <div>
+                <h1>Valentina Astore</h1>
+                <div class="contact-info">
+                    <table>
+                        <tr>
+                            <td>Email Addresses:</td>
+                            <td>
+                                <a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a>,<br>
+                                <a href="mailto:valentina.astore@ip-paris.fr">valentina.astore@ip-paris.fr</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LinkedIn:</td>
+                            <td><a href="https://www.linkedin.com/in/valentina-astore" target="_blank">Valentina-Astore</a></td>
+                        </tr>
+                        <tr>
+                            <td>Office Address:</td>
+                            <td>Inria de Saclay - Bâtiment Alan Turing<br>
+                                Campus de l'École polytechnique<br>
+                                1 rue Honoré d'Estienne d'Orves<br>
+                                91120 Palaiseau
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-        <img src="profile_pic.jpg" alt="Your profile photo" class="profile-photo">
-    </header>
+            <img src="profile_pic.jpg" alt="Your profile photo" class="profile-photo">
+        </header>
 
-    <section>
-        <div class="content-container">
-            <h2 class="section-title">About Me</h2>
-            <div class="content-item">
-                <p> I am a PhD student working in a joint collaboration between the <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at <a href="https://www.inria.fr/fr/centre-inria-de-saclay" target="_blank">INRIA Paris-Saclay</a> and the <a href="https://portail.polytechnique.edu/informatique/fr/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> team at <a href="https://www.polytechnique.edu" target="_blank">École polytechnique</a>.
-                I am supervised by <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>.
-                My research interests include Algebraic Coding Theory, Finite Fields, Finite Geometry, and applications to Cryptography. <br>
+        <section>
+            <div class="content-container">
+                <h2 class="section-title">About Me</h2>
+                <div class="content-item">
+                    <p>I am a PhD student working in a joint collaboration between the 
+                        <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at 
+                        <a href="https://www.inria.fr/fr/centre-inria-de-saclay" target="_blank">INRIA Paris-Saclay</a> 
+                        and the <a href="https://portail.polytechnique.edu/informatique/fr/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
+                        at <a href="https://www.polytechnique.edu" target="_blank">École polytechnique</a>. I am supervised by 
+                        <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and 
+                        <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>.
+                        My research interests include Algebraic Coding Theory, Finite Fields, Finite Geometry, and applications to Cryptography.
+                        <br><br>In March 2024, I completed my Master's of Science in Mathematics at the 
+                        <a href="https://international.unitn.it/maths" target="_blank">University of Trento</a>. There, I attended a highly selective 
+                        Master's program focused on mathematical topics with direct applications in Cryptography and Coding Theory, alongside courses on 
+                        computer science and information theory.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="content-container">
+                <h2 class="section-title">Teaching</h2>
+                <div class="content-item">
+                    <ul>
+                        <li><a href="course1-material.pdf" target="_blank">Course 1 Material</a></li>
+                    </ul>
+                </div>
+
+                <h2 class="section-title">Conferences</h2>
+                <div class="content-item">
+                    <ul>
+                        <li>Contributed talk at <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa, Open Problems on Rank-Metric Codes</a> <br>
+                        February 2024, Caserta (Italy)</li>
+                    </ul>
+                </div>
                 
-                In March 2024, I completed my Master's of Science in Mathematics at the <a href="https://international.unitn.it/maths" target="_blank">University of Trento</a>. There, I took part in a highly selective Master's program focused on mathematical topics with direct applications in Cryptography and Coding Theory. In addition, I attended courses on computer science and information theory.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content-container">
-            <h2 class="section-title">Affiliated Institutions</h2>
-            <div class="logos">
-                <img src="institution-logo1.png" alt="Institution Logo 1">
-                <img src="institution-logo2.png" alt="Institution Logo 2">
-                <!-- Add more logos as needed -->
-            </div>
-
-            <h2 class="section-title">Teaching</h2>
-            <div class="content-item">
-                <ul>
-                    <li><a href="course1-material.pdf" target="_blank">Course 1 Material</a></li>
-                </ul>
-            </div>
-
-          <!--
-            <h2 class="section-title">Publications</h2>
-            <div class="content-item">
-                <ul>
-                    <li>Publication 1 - <em>Journal Name</em> (Year)</li>
-                </ul>
-            </div>
-            -->
+                <!--
+                <h2 class="section-title">Affiliated Institutions</h2>
+                <div class="logos">
+                    <img src="institution-logo1.png" alt="Institution Logo 1">
+                    <img src="institution-logo2.png" alt="Institution Logo 2">
+                    
+                </div>
+                -->
             
-            <h2 class="section-title">Conferences</h2>
-            <div class="content-item">
-                <ul>
-                    <li>Contributed talk at <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa, Open Problems on Rank-Metric Codes</a> - February 2024, Caserta (Italy) </li>
-                </ul>
-            </div>
+                <!--
+                <h2 class="section-title">Publications</h2>
+                <div class="content-item">
+                    <ul>
+                        <li>Publication 1 - <em>Journal Name</em> (Year)</li>
+                    </ul>
+                </div>
+                -->
 
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <div class="download-cv">
-                <a href="Academic_CV_ASTORE.pdf" download>Academic CV</a>
+                <h2 class="section-title">Curriculum Vitae</h2>
+                <div class="download-cv">
+                    <a href="Academic_CV_ASTORE.pdf" download>Academic CV</a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
 </body>
 </html>
-
