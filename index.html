@@ -6,88 +6,102 @@
     <meta name="description" content="Personal webpage of Valentina">
     <title>Personal Webpage</title>
     <style>
+        /* Basic Styles */
         body {
             font-family: Courier New, sans-serif;
-            margin: auto;
+            margin: 0;
             padding: 0;
         }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding-left: 20px;
+            padding: 20px;
         }
+        
         header h1 {
             margin-top: 20px;
         }
+        
+        /* Info and Contact Styles */
         .info-container {
             display: flex;
             align-items: flex-start;
             margin-top: 20px;
         }
+        
         .contact-info {
             margin-right: 20px;
         }
-        .profile-photo {
-            width: 150px;
-            border-radius: 0%;
-        }
+        
         .contact-info table {
             border-collapse: collapse;
-            width: auto;
         }
+        
         .contact-info td {
-            vertical-align: top;
             padding: 5px;
-            text-align: left;
-            white-space: nowrap;
+            vertical-align: top;
         }
+        
+        .icon, .big-icon {
+            vertical-align: middle;
+        }
+        
+        .icon {
+            width: 30px;
+        }
+        
+        .big-icon {
+            width: 50px;
+        }
+        
+        /* Section Styles */
         .section-title {
             font-size: 1.5em;
             margin-top: 40px;
             color: #333;
         }
-        .contact-info a, .download-cv {
-            color: #0073e6;
-            text-decoration: none;
-        }
+        
         .content-container {
             max-width: 800px;
             margin: auto;
         }
+        
         .content-item {
             margin-bottom: 20px;
         }
-        .icon {
-            width: 20px;
-            vertical-align: middle;
+        
+        .contact-info a {
+            color: #0073e6;
+            text-decoration: none;
         }
-        .big-icon {
-            width: 35px;
-            vertical-align: middle;
+        
+        /* Profile Photo */
+        .profile-photo {
+            width: 150px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
+        
+        <!-- Header with Name and Contact Information -->
         <header>
             <h1>Valentina Astore</h1>
             <div class="info-container">
+                
+                <!-- Contact Information -->
                 <div class="contact-info">
                     <table>
                         <tr>
-                            <td>
-                            <img src="Icons/email.png" alt="Email" class="icon">
-                            </td>
+                            <td><img src="Icons/email.png" alt="Email" class="icon"></td>
                             <td>
                                 <a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a>,<br>
                                 <a href="mailto:valentina.astore@ip-paris.fr">valentina.astore@ip-paris.fr</a>
                             </td>
                         </tr>
                         <tr>
-                            <td>
-                                <img src="Icons/location.png" alt="Professional Address" class="icon">    
-                            </td>
+                            <td><img src="Icons/location.png" alt="Professional Address" class="icon"></td>
                             <td>Inria de Saclay - Bâtiment Alan Turing<br>
                                 Campus de l'École polytechnique<br>
                                 1 rue Honoré d'Estienne d'Orves<br>
@@ -96,15 +110,19 @@
                         </tr>
                     </table>
                 </div>
+                
+                <!-- Profile Photo -->
                 <img src="profile_pic.jpg" alt="Your profile photo" class="profile-photo">
             </div>
         </header>
         
+        <!-- About Me Section -->
         <section>
             <div class="content-container">
                 <h2 class="section-title">About Me</h2>
                 <div class="content-item">
-                    <p>I am a PhD student working in a joint collaboration between the 
+                    <p>
+                        I am a PhD student working in a joint collaboration between the 
                         <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at 
                         <a href="https://www.inria.fr/fr/centre-inria-de-saclay" target="_blank">INRIA Paris-Saclay</a> 
                         and the <a href="https://portail.polytechnique.edu/informatique/fr/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
@@ -112,7 +130,8 @@
                         <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and 
                         <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>.
                         My research interests include Algebraic Coding Theory, Finite Fields, Finite Geometry, and applications to Cryptography.
-                        <br><br>In March 2024, I completed my Master's of Science in Mathematics at the 
+                        <br><br>
+                        In March 2024, I completed my Master's of Science in Mathematics at the 
                         <a href="https://international.unitn.it/maths" target="_blank">University of Trento</a>. There, I attended a highly selective 
                         Master's program focused on mathematical topics with direct applications in Cryptography and Coding Theory, alongside courses on 
                         computer science and information theory.
@@ -121,32 +140,34 @@
             </div>
         </section>
 
+        <!-- Teaching Section -->
         <section>
             <div class="content-container">
                 <h2 class="section-title">Teaching</h2>
                 <div class="content-item">
                     <ul>
-                        <li> Fall 2024 (Tutoring) <a href="https://www.enseignement.polytechnique.fr/informatique/INF412/i.php?n=Main.HomePage" target="_blank">CSC_41012_EP - INF 412</a></li>
+                        <li>Fall 2024 (Tutoring) <a href="https://www.enseignement.polytechnique.fr/informatique/INF412/i.php?n=Main.HomePage" target="_blank">CSC_41012_EP - INF 412</a></li>
                     </ul>
                 </div>
 
+                <!-- Talks Section -->
                 <h2 class="section-title">Talks</h2>
                 <div class="content-item">
                     <ul>
-                        <li>Contributed talk at <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa, Open Problems on Rank-Metric Codes</a> <br>
-                        February 2024, Caserta (Italy)</li>
+                        <li>Contributed talk at <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa, Open Problems on Rank-Metric Codes</a><br>February 2024, Caserta (Italy)</li>
                     </ul>
                 </div>
-                
+
+                <!-- Uncomment to add logos of affiliated institutions -->
                 <!--
                 <h2 class="section-title">Affiliated Institutions</h2>
                 <div class="logos">
                     <img src="institution-logo1.png" alt="Institution Logo 1">
                     <img src="institution-logo2.png" alt="Institution Logo 2">
-                    
                 </div>
                 -->
-            
+
+                <!-- Uncomment to add publications -->
                 <!--
                 <h2 class="section-title">Publications</h2>
                 <div class="content-item">
@@ -156,16 +177,17 @@
                 </div>
                 -->
 
+                <!-- Additional Information Section -->
                 <h2 class="section-title">Additional Information</h2>
                 <div class="contact-info">
                   <table>
                     <tr>
                       <td>
                         <a href="Academic_CV_ASTORE.pdf" download>
-                              <img src="Icons/cv.png" alt="Curriculum Vitae" class="big-icon"></a>
+                            <img src="Icons/cv.png" alt="Curriculum Vitae" class="big-icon">
+                        </a>
                       </td>
                       <td>
-                        <!-- LinkedIn Icon -->
                         <a href="https://www.linkedin.com/in/valentina-astore" target="_blank">
                             <img src="Icons/linkedin.png" alt="LinkedIn Profile" class="big-icon">
                         </a>
@@ -176,6 +198,5 @@
             </div>
         </section>
     </div>
-
 </body>
 </html>
