@@ -13,7 +13,6 @@
             --highlight-color: #f5821f; /* Orange for highlights */
             --text-color: #0e0f3b; /* General text color */
             --link-color: #00a7c7; /* Blue for links */
-            --link-hover-color: #e76f3d; /* Orange hover for links */
         }
         
         /* Basic Styles */
@@ -87,17 +86,18 @@
             margin-bottom: 20px;
         }
         
-        a:link, a:active {
+        a:link {
           color: var(--link-color);
-          text-decoration: none;
+          background-color: transparent;
           text-decoration: none;
         }
         
         a:hover {
-          color: var(--link-hover-color); /* Orange hover for links */
+          /*color: var(--highlight-color); /* Orange hover for links */
+          text-decoration: underline;
         }
         
-        a:visited {
+        a:visited, a:active {
           color: var(--link-color);
           background-color: transparent;
           text-decoration: underline;
@@ -156,7 +156,7 @@
                 <div class="content-item">
                     <p>
                         I am a PhD student working with the 
-                        <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at 
+                        <a href="https://team.inria.fr/grace/"  target="_blank">GRACE</a> team at 
                         <a href="https://www.inria.fr/fr/centre-inria-de-saclay" target="_blank">INRIA Paris-Saclay</a> 
                         and the <a href="https://portail.polytechnique.edu/informatique/fr/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
                         at <a href="https://www.polytechnique.edu" target="_blank">École polytechnique</a>. I am supervised by 
