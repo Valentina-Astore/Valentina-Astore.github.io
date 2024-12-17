@@ -3,239 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal webpage of Valentina">
+    <meta name="description" content="Personal webpage of Valentina Astore">
     <title>Valentina Astore</title>
     <style>
-        /* Color Palette */
+        /* -------- COLOR PALETTE -------- */
         :root {
             --background-color: #f3e9e7; /* Light background */
-            --title-color: #07407b; /* Deep blue for title */
-            --highlight-color: #f5821f; /* Orange for highlights */
-            --text-color: #000000; /* General text color 0e0f3b */
-            --link-color: #00a7c7; /* Blue for links */
+            --title-color: #07407b;      /* Deep blue for titles */
+            --highlight-color: #f5821f;  /* Orange for highlights */
+            --text-color: #000000;       /* Black for text */
+            --link-color: #00a7c7;       /* Blue for links */
         }
-        
-        /* Basic Styles */
+
+        /* -------- GLOBAL STYLES -------- */
         body {
-            font-family: Courier New, sans-serif;
+            font-family: "Courier New", Courier, monospace;
             background-color: var(--background-color);
             margin: 0;
             padding: 0;
             color: var(--text-color);
         }
-        
+
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         header h1 {
-            margin-top: 20px;
             text-align: center;
             color: var(--title-color);
+            margin-bottom: 20px;
         }
-        
-        /* Info and Contact Styles */
-        .contact-info {
-            margin-right: 20px;
+
+        /* -------- NAVIGATION BAR -------- */
+        nav {
+            background: var(--title-color);
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-bottom: 30px;
         }
-        
+
+        nav a {
+            color: var(--link-color);
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        /* -------- CONTACT & PROFILE PHOTO -------- */
         .contact-info table {
+            width: 100%;
             border-collapse: collapse;
         }
-        
-        .contact-info td {
-            padding: 5px;
-            vertical-align: top;
-        }
-        
+
         .icon, .big-icon {
             vertical-align: middle;
         }
-        
+
         .icon {
             width: 20px;
             margin-right: 5px;
         }
-        
+
         .big-icon {
             height: 35px;
             margin-right: 15px;
         }
-        
-        /* Section Styles */
+
+        /* .profile-photo {
+            width: 150px;
+            float: right;
+            margin-left: 20px;
+        } */
+
+        /* -------- SECTION STYLES -------- */
         .section-title {
             font-size: 1.5em;
             margin-top: 40px;
-            color: var(--highlight-color); /* Orange section titles */
+            color: var(--highlight-color);
         }
-        
-        .content-container {
-            max-width: 800px;
-            margin: auto;
-        }
-        
+
         .content-item {
             margin-bottom: 20px;
         }
-        
-        a:link {
-          color: var(--link-color);
-          background-color: transparent;
-          text-decoration: none;
-        }
-        
-        a:hover {
-          /*color: var(--highlight-color); /* Orange hover for links */
-          text-decoration: underline;
-        }
-        
-        a:visited, a:active {
-          color: var(--link-color);
-          background-color: transparent;
-          text-decoration: underline;
-        }
-
-        
-        
-        
-        /* Profile Photo */
-        .profile-photo {
-            width: 150px;
-            float: right;
-            margin-left: 100px;
-        }
     </style>
 </head>
+
 <body>
     <div class="container">
-        
-        <!-- Header with Name and Contact Information -->
+
+        <!-- Header -->
         <header>
             <h1>Valentina Astore</h1>
-            <!-- Contact Information -->
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#papers">Papers</a>
+            <a href="#talks">Talks</a>
+            <a href="#teaching">Teaching</a>
+            <a href="#info">Additional Info</a>
+        </nav>
+
+        <!-- Contact Info -->
+        <section>
             <div class="contact-info">
-                <table style="width: 100%;">
+                <table>
                     <tr>
                         <td><img src="Icons/email.png" alt="Email" class="icon"></td>
                         <td>
                             <a href="mailto:valentina.astore@inria.fr">valentina.astore@inria.fr</a><br>
                             <a href="mailto:valentina.astore@ip-paris.fr">valentina.astore@ip-paris.fr</a>
                         </td>
-                        <td rowspan="2"><img src="profile_pic.jpg" alt="Profile photo" class="profile-photo"></td>
+                        <td rowspan="2">
+                            <!-- <img src="profile_pic.jpg" alt="Profile photo" class="profile-photo"> -->
+                            <img src="profile_pic.jpg" alt="Profile photo" style="float: right;">
+                        </td>
                     </tr>
                     <tr>
-                        <td><img src="Icons/location.png" alt="Professional Address" class="icon"></td>
-                        <td>Inria de Saclay - Bâtiment Alan Turing<br>
+                        <td><img src="Icons/location.png" alt="Location" class="icon"></td>
+                        <td>
+                            Inria de Saclay - Bâtiment Alan Turing<br>
                             Campus de l'École polytechnique<br>
                             1 rue Honoré d'Estienne d'Orves<br>
-                            91120 Palaiseau <br>
-                            France
+                            91120 Palaiseau, France
                         </td>
                     </tr>
                 </table>
             </div>
-        </header>
-        
-        <!-- About Me Section -->
-        <section>
-            <div class="content-container">
-                <h2 class="section-title">About Me</h2>
-                <div class="content-item">
-                    <p>
-                        I am a PhD student working with the 
-                        <a href="https://team.inria.fr/grace/"  target="_blank">GRACE</a> team at 
-                        <a href="https://www.inria.fr/en/inria-saclay-centre" target="_blank">INRIA Paris-Saclay</a> 
-                        and the <a href="https://portail.polytechnique.edu/informatique/en/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
-                        at <a href="https://www.polytechnique.edu/en" target="_blank">École polytechnique</a>, under the supervision of 
-                        <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and 
-                        <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>. <br>
-                        My research interests include Algebraic Coding Theory (in both Hamming and rank metrics), Finite Geometry, and applications to Cryptography.
-                        <br><br>
-                        In March 2024, I completed a Master of Science in Mathematics at the 
-                        <a href="https://international.unitn.it/maths" target="_blank">University of Trento</a>, where I participated in a highly selective program focusing on mathematical topics with direct applications to Cryptography and Coding Theory.
-                    </p>
-                </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="content-item">
+                <p>
+                    I am a PhD student working with the 
+                    <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at 
+                    <a href="https://www.inria.fr/en/inria-saclay-centre" target="_blank">INRIA Paris-Saclay</a> 
+                    and the <a href="https://portail.polytechnique.edu/informatique/en/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
+                    at <a href="https://www.polytechnique.edu/en" target="_blank">École polytechnique</a>, under the supervision of 
+                    <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and 
+                    <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>.
+                </p>
+                <p>
+                    My research interests include Algebraic Coding Theory (in both Hamming and rank metrics), Finite Geometry, and applications to Cryptography. In March 2024, I completed a Master of Science in Mathematics at the 
+                    <a href="https://international.unitn.it/maths" target="_blank">University of Trento</a>.
+                </p>
             </div>
         </section>
 
-        <!-- Preprints Section -->
-        <section>
-            <div class="content-container">
-                <h2 class="section-title">Preprints</h2>
-                <div class="content-item">
-                    <ul>
-                        <li> V. Astore, M. Borello, M. Calderini, F. Salizzoni. <a href="https://arxiv.org/abs/2411.19087" target="_blank"><em>A geometric invariant of linear rank-metric codes </em></a>. arXiv:2411.19087. (2024)</li>
-                    </ul>
-                </div></div>
-
-                <!-- Talks Section -->
-                <h2 class="section-title">Talks</h2>
-                <div class="content-item">
-                    <ul>
-                        <li>Contributed talk at <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa, Open Problems on Rank-Metric Codes</a><br>February 2024, Caserta (Italy)</li>
-                    </ul>
-                </div>
-                
-                <!-- Teaching Section -->
-                <div class="content-container">
-                <h2 class="section-title">Teaching</h2>
-                <div class="content-item">
-                    <ul>
-                        <li>Fall 2024 (Tutoring) <a href="https://www.enseignement.polytechnique.fr/informatique/INF412/i.php?n=Main.HomePage" target="_blank">CSC_41012_EP - INF 412</a></li>
-                    </ul>
-                </div>
-
-                <!-- Uncomment to add logos of affiliated institutions -->
-                <!--
-                <h2 class="section-title">Affiliated Institutions</h2>
-                <div class="logos">
-                    <img src="institution-logo1.png" alt="Institution Logo 1">
-                    <img src="institution-logo2.png" alt="Institution Logo 2">
-                </div>
-                -->
-
-                <!-- Uncomment to add publications -->
-                <!--
-                <h2 class="section-title">Publications</h2>
-                <div class="content-item">
-                    <ul>
-                        <li>Publication 1 - <em>Journal Name</em> (Year)</li>
-                    </ul>
-                </div>
-                -->
-
-                <!-- Additional Information Section -->
-                <h2 class="section-title">Additional Information</h2>
-                <div class="contact-info">
-                  <table>
-                    <tr>
-                      <td>
-                        <a href="https://arxiv.org/search/cs?searchtype=author&query=Astore,+V" target="_blank">
-                            <img src="Icons/arxiv-logomark-small-black.svg" alt="Arxiv Profile" class="big-icon">
-                        </a>
-                      </td>
-                      <td>
-                        <a href="https://www.researchgate.net/profile/Valentina-Astore" target="_blank">
-                            <img src="Icons/researchgate.svg" alt="ResearchGate Profile" class="big-icon">
-                        </a>
-                      </td>
-                      <td>
-                        <a href="https://www.linkedin.com/in/valentina-astore" target="_blank">
-                            <img src="Icons/linkedin.png" alt="LinkedIn Profile" class="big-icon">
-                        </a>
-                      </td>
-                      <td>
-                        <a href="CV_ASTORE.pdf" download>
-                            <img src="Icons/cv.png" alt="Curriculum Vitae" class="big-icon">
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </div>
+        <!-- Preprints -->
+        <section id="papers">
+            <h2 class="section-title">Preprints</h2>
+            <div class="content-item">
+                <ul>
+                    <li>
+                        V. Astore, M. Borello, M. Calderini, F. Salizzoni. 
+                        <a href="https://arxiv.org/abs/2411.19087" target="_blank">
+                            <em>A geometric invariant of linear rank-metric codes</em>
+                        </a>. arXiv:2411.19087. (2024)
+                    </li>
+                </ul>
             </div>
         </section>
+
+        <!-- Talks -->
+        <section id="talks">
+            <h2 class="section-title">Talks</h2>
+            <div class="content-item">
+                <ul>
+                    <li>
+                        Contributed talk at 
+                        <a href="https://www.math.univ-paris13.fr/~borello/OpeRa2024/main" target="_blank">OpeRa 2024</a>
+                        <br>February 2024, Caserta (Italy)
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Teaching -->
+        <section id="teaching">
+            <h2 class="section-title">Teaching</h2>
+            <div class="content-item">
+                <ul>
+                    <li>
+                        Fall 2024 (Tutoring): 
+                        <a href="https://www.enseignement.polytechnique.fr/informatique/INF412/i.php?n=Main.HomePage" target="_blank">CSC_41012_EP - INF 412</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Additional Information -->
+        <section id="info">
+            <h2 class="section-title">Additional Information</h2>
+            <table>
+                <tr>
+                    <td><a href="https://arxiv.org" target="_blank"><img src="Icons/arxiv-logomark-small-black.svg" alt="arXiv" class="big-icon"></a></td>
+                    <td><a href="https://www.researchgate.net" target="_blank"><img src="Icons/researchgate.svg" alt="ResearchGate" class="big-icon"></a></td>
+                    <td><a href="https://www.linkedin.com" target="_blank"><img src="Icons/linkedin.png" alt="LinkedIn" class="big-icon"></a></td>
+                    <td><a href="CV_ASTORE.pdf" download><img src="Icons/cv.png" alt="CV" class="big-icon"></a></td>
+                </tr>
+            </table>
+        </section>
+
     </div>
 </body>
 </html>
