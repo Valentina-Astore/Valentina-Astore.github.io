@@ -8,9 +8,9 @@
     <style>
         /* -------- COLOR PALETTE -------- */
         :root {
-            --background-color: #f3e9e7; /* Light background */
+            --background-color: #f3e9e7; /*#F5F5F5; /* Light background */
             --title-color: #07407b;      /* Deep blue for titles */
-            --highlight-color: #f5821f;  /* Orange for highlights */
+            --highlight-color: #f5821f; /* Orange for highlights */
             --text-color: #000000;       /* Black for text */
             --link-color: #00a7c7;       /* Blue for links */
         }
@@ -18,27 +18,27 @@
         /* -------- GLOBAL STYLES -------- */
         body {
             font-family: "Courier New", Courier, monospace;
-            background-color: var(--background-color);
             margin: 0;
             padding: 0;
+            /* line-height: 1.6; */
+            background-color: var(--background-color);
             color: var(--text-color);
         }
-
         a {
             color: var(--link-color);
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
-
+        li::marker {
+            color: var(--highlight-color);
+        }
         header h1 {
             text-align: center;
             color: var(--title-color);
@@ -53,9 +53,8 @@
             padding: 10px 0;
             margin-bottom: 30px;
         }
-
         nav a {
-            color: var(--link-color);
+            color: var(--highlight-color);
             margin: 0 15px;
             font-weight: bold;
         }
@@ -66,21 +65,17 @@
             border-collapse: collapse;
             margin: 0 auto;
         }
-
         .icon, .big-icon {
             vertical-align: middle;
         }
-
         .icon {
             width: 20px;
             margin-right: 5px;
         }
-
         .big-icon {
             height: 35px;
             margin-right: 20px;
         }
-
         .profile-photo {
             width: 150px;
             float: right;
@@ -88,12 +83,18 @@
         }
 
         /* -------- SECTION STYLES -------- */
+        section{
+            border-bottom: 1px solid var(--title-color);
+            padding-bottom: 20px;
+        }
+        section#info{
+            border-bottom: hidden;
+        }
         .section-title {
             font-size: 1.5em;
             margin-top: 50px;
             color: var(--highlight-color);
         }
-
         .content-item {
             margin-bottom: 20px;
         }
@@ -149,10 +150,10 @@
             <h2 class="section-title">About Me</h2>
             <div class="content-item">
                 <p>
-                    I am a PhD student working with the 
+                    I am a fisrt-year PhD student working with the 
                     <a href="https://team.inria.fr/grace/" target="_blank">GRACE</a> team at 
                     <a href="https://www.inria.fr/en/inria-saclay-centre" target="_blank">INRIA Paris-Saclay</a> 
-                    and the <a href="https://portail.polytechnique.edu/informatique/en/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> 
+                    and the <a href="https://portail.polytechnique.edu/informatique/en/recherche/le-laboratoire-dinformatique" target="_blank">LIX</a> laboratory 
                     at <a href="https://www.polytechnique.edu/en" target="_blank">École polytechnique</a>, under the supervision of 
                     <a href="https://www.lix.polytechnique.fr/Labo/Alain.Couvreur" target="_blank">Alain Couvreur</a> and 
                     <a href="https://www.math.univ-paris13.fr/~borello" target="_blank">Martino Borello</a>.
@@ -171,10 +172,7 @@
             <div class="content-item">
                 <ul>
                     <li>
-                        V. Astore, M. Borello, M. Calderini, F. Salizzoni. 
-                        <a href="https://arxiv.org/abs/2411.19087" target="_blank">
-                            <em>A geometric invariant of linear rank-metric codes</em>
-                        </a>. arXiv:2411.19087. (2024)
+                        V. Astore, M. Borello, M. Calderini, F. Salizzoni. <a href="https://arxiv.org/abs/2411.19087" target="_blank"><em>A geometric invariant of linear rank-metric codes</em></a>. arXiv:2411.19087. (2024)
                     </li>
                 </ul>
             </div>
