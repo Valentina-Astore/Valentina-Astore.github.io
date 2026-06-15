@@ -100,18 +100,16 @@
         }
         .info-icons {
             display: flex;
-            justify-content: space-evenly; /* equal spacing */
-            align-items: center;
             width: 100%;
             margin-top: 20px;
         }
         .info-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            flex: 1;                  /* each icon gets the same width */
+            text-align: center;       /* center icon in its share of space */
         }
         .big-icon {
             height: 35px;
+            margin-right: 0;
         }
         .profile-photo {
             width: 150px;
